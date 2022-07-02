@@ -1,12 +1,28 @@
-alias k='kubectl'
+alias grep='grep --color'
+
+#shortcuts
+alias desktop='cd ~/Desktop'
+alias Desktop='cd ~/Desktop'
+
 alias up='docker-compose up -d'
 alias down='docker-compose down'
 
-alias grep='grep --color'
-alias desktop='cd ~/Desktop'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+
+# git
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add --all'
+alias gc='git commit -m'
+alias gpl='git pull'
+alias gps='git push'
+alias gas='git add --all && git status'
+alias gac='git add --all && git commit -m'
+
 alias zshrc='less ~/.zshrc'
 alias aliases='less ~/.bash_aliases'
-alias pyb='pyb --no-venvs'
 
 v(){
 	if [[ $@ == "zshrc" ]];then
@@ -17,6 +33,3 @@ v(){
 		command nvim "$@"
 	fi
 }
-echo 'aliases initialized'
-
-
