@@ -1,0 +1,22 @@
+alias k='kubectl'
+alias up='docker-compose up -d'
+alias down='docker-compose down'
+
+alias grep='grep --color'
+alias desktop='cd ~/Desktop'
+alias zshrc='less ~/.zshrc'
+alias aliases='less ~/.bash_aliases'
+alias pyb='pyb --no-venvs'
+
+v(){
+	if [[ $@ == "zshrc" ]];then
+		command nvim ~/.zshrc
+	elif [[ $@ == "aliases" ]]; then
+		command nvim ~/.bash_aliases
+	else
+		command nvim "$@"
+	fi
+}
+echo 'aliases initialized'
+
+
