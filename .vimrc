@@ -31,9 +31,12 @@ Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'gruvbox-community/gruvbox'
+
+Plug 'zivyangll/git-blame.vim'
 call plug#end()
 
 let mapleader = " "
+let g:python3_host_prog="/path/to/python/executable/"
 
 colorscheme gruvbox
 highlight Normal guibg=none
@@ -46,3 +49,6 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>gb <cmd>lua require('telescope.builtin').git_branches()<cr>
 nnoremap <leader>gs <cmd>lua require('telescope.builtin').git_status()<cr>
+nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr>
+
+nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>
