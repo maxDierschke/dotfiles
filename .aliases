@@ -33,3 +33,4 @@ v(){
 		command nvim "$@"
 	fi
 }
+alias vim='nvim'
