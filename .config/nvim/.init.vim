@@ -21,3 +21,6 @@ nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>
 
 source ./.coc_configuration.vim
 
+"use space y to copy to sys clipboard.
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
