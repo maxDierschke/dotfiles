@@ -12,4 +12,8 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'zivyangll/git-blame.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'machakann/vim-highlightedyank'
+"Plug 'preservim/tagbar'
+"Plug 'vim-airline/vim-airline'
+
 call plug#end()
