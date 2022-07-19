@@ -15,5 +15,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'machakann/vim-highlightedyank'
 "Plug 'preservim/tagbar'
 "Plug 'vim-airline/vim-airline'
-
+"Plug 'preservim/nerdtree'
+"Plug 'mg979/vim-visual-multi'
+"Plug 'tpope/vim-surround'
+"Plug 'tc50cal/vim-terminal'
+"Plug 'tpope/vim-commentary'
 call plug#end()
