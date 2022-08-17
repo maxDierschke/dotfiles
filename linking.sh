@@ -4,11 +4,7 @@ if [ -f ~/.aliases ] || [ -L ~/.aliases ]; then
 else
 	ln -sf ~/.dotfiles/.aliases ~/.aliases  
 fi
-if [ -f ~/.vimrc ] || [ -L ~/.vimrc ]; then
-	echo '~/.vimrc already exists and was not linked'
-else
-	ln -sf ~/.dotfiles/.vimrc ~/.vimrc
-fi
+ln -sF ~/.dotfiles/.config/nvim ~/.config/nvim
 if [ -f ~/.zshrc ] || [ -L ~/.zshrc ]; then
 	echo '~/.zshrc already exists and was not linked'
 else
