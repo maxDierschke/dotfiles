@@ -1,6 +1,6 @@
-source ./.variables.vim
-source ./.plugins.vim
-source ./.disable_arrows.vim
+source ~/.config/nvim/.variables.vim
+source ~/.config/nvim/.plugins.vim
+source ~/.config/nvim/.disable_arrows.vim
 
 let mapleader = " "
 
@@ -19,7 +19,7 @@ nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr>
 
 nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>
 
-source ./.coc_configuration.vim
+source ~/.config/nvim/.coc_configuration.vim
 
 "use space y to copy to sys clipboard.
 nnoremap <leader>y "+y
