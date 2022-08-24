@@ -47,5 +47,6 @@ Plug 'tc50cal/vim-terminal'
 
 Plug 'tpope/vim-commentary'
 
+Plug 'dusans/vim-hardmode'
 Plug 'puremourning/vimspector'
 call plug#end()

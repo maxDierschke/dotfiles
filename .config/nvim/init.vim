@@ -25,3 +25,6 @@ source ~/.config/nvim/.vimspector.vim
 "use space y to copy to sys clipboard.
 nnoremap <leader>y "+y
 nnoremap <leader>p "+p
+
+" enable hard mode by default
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
