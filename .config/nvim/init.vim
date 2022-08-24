@@ -20,6 +20,7 @@ nnoremap <leader>gc <cmd>lua require('telescope.builtin').git_commits()<cr>
 nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>
 
 source ~/.config/nvim/.coc_configuration.vim
+source ~/.config/nvim/.vimspector.vim
 
 "use space y to copy to sys clipboard.
 nnoremap <leader>y "+y

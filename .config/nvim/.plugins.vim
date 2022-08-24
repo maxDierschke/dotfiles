@@ -1,5 +1,6 @@
 
 call plug#begin()
+"'~/.vim/plugged')
 
 " implementation of grep
 Plug 'BurntSushi/ripgrep'
@@ -45,4 +46,6 @@ Plug 'tpope/vim-surround'
 Plug 'tc50cal/vim-terminal'
 
 Plug 'tpope/vim-commentary'
+
+Plug 'puremourning/vimspector'
 call plug#end()
