@@ -29,3 +29,5 @@ nnoremap <leader>p "+p
 
 " enable hard mode by default
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+" used by gitgutter to display additional gutter
+set signcolumn=yes

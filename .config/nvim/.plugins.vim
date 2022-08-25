@@ -1,4 +1,3 @@
-
 call plug#begin()
 "'~/.vim/plugged')
 
@@ -12,7 +11,6 @@ Plug 'nvim-lua/plenary.nvim'
 " fuzzy finder that works together with rg, and popup
 Plug 'nvim-telescope/telescope.nvim'
 
-
 " needed for finding object tree
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -21,6 +19,9 @@ Plug 'gruvbox-community/gruvbox'
 
 " single line git blame
 Plug 'zivyangll/git-blame.vim'
+
+" git blame in gutters
+Plug 'airblade/vim-gitgutter'
 
 " language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -51,4 +52,5 @@ Plug 'dusans/vim-hardmode'
 Plug 'puremourning/vimspector'
 
 Plug 'vim-autoformat/vim-autoformat'
+Plug 'tpope/vim-fugitive'
 call plug#end()
