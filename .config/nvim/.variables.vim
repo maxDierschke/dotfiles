@@ -1,8 +1,7 @@
-
 syntax on
 
 set number
-set relativenumber
+"set relativenumber
 set autoindent
 
 set tabstop=4 softtabstop=4
@@ -25,4 +24,5 @@ set incsearch
 set scrolloff=8
 set signcolumn=yes
 set colorcolumn=80
-
+inoremap <BS> <Nop>
+inoremap <Del> <Nop>
