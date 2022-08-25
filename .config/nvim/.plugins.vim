@@ -6,6 +6,7 @@ Plug 'BurntSushi/ripgrep'
 
 " popup Api for neovim
 Plug 'nvim-lua/popup.nvim'
+" lua abstraction to be used in nvim; needed for telescope
 Plug 'nvim-lua/plenary.nvim'
 
 " fuzzy finder that works together with rg, and popup
@@ -14,6 +15,7 @@ Plug 'nvim-telescope/telescope.nvim'
 " needed for finding object tree
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+Plug 'p00f/nvim-ts-rainbow'
 " theme 
 Plug 'gruvbox-community/gruvbox'
 
