@@ -26,3 +26,4 @@ set signcolumn=yes
 set colorcolumn=80
 inoremap <BS> <Nop>
 inoremap <Del> <Nop>
+let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.9/bin/python3'

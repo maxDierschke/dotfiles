@@ -49,4 +49,6 @@ Plug 'tpope/vim-commentary'
 
 Plug 'dusans/vim-hardmode'
 Plug 'puremourning/vimspector'
+
+Plug 'vim-autoformat/vim-autoformat'
 call plug#end()
