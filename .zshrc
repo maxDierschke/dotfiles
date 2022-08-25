@@ -45,6 +45,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    thefuck
     vi-mode
     command-not-found
 

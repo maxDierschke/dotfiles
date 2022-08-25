@@ -38,4 +38,4 @@ v(){
 alias vi='nvim'
 alias vim='nvim'
 
-
+eval $(thefuck --alias)
