@@ -48,6 +48,7 @@ Plug 'nvim-lua/plenary.nvim'
 
 " fuzzy finder that works together with rg, and popup
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 "===================================
 
 " IDE capabilities
