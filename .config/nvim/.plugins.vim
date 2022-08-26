@@ -1,38 +1,75 @@
 call plug#begin()
 "'~/.vim/plugged')
 
+" theme 
+Plug 'gruvbox-community/gruvbox'
+
+"Tools for better vim interacton
+"===================================
+
+" see what you yanked
+Plug 'machakann/vim-highlightedyank'
+
+" surround visual with any markers
+Plug 'tpope/vim-surround'
+
+" shortcut to comment code
+Plug 'tpope/vim-commentary'
+
+" repeat commands in multiple lines
+" Plug 'mg979/vim-visual-multi'
+
+"===================================
+
+" Git integration
+"===================================
+
+" Git plugin so good it should be illegal
+Plug 'tpope/vim-fugitive'
+
+" single line git blame
+" Plug 'zivyangll/git-blame.vim'
+
+" git blame in gutters
+" Plug 'airblade/vim-gitgutter'
+"===================================
+
+" Searching functionality
+"===================================
+
 " implementation of grep
 Plug 'BurntSushi/ripgrep'
 
 " popup Api for neovim
 Plug 'nvim-lua/popup.nvim'
+
 " lua abstraction to be used in nvim; needed for telescope
 Plug 'nvim-lua/plenary.nvim'
 
 " fuzzy finder that works together with rg, and popup
 Plug 'nvim-telescope/telescope.nvim'
+"===================================
+
+" IDE capabilities
+"===================================
+
+" auto formatting
+Plug 'vim-autoformat/vim-autoformat'
 
 " needed for finding object tree
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-Plug 'p00f/nvim-ts-rainbow'
-" theme 
-Plug 'gruvbox-community/gruvbox'
-
-" single line git blame
-Plug 'zivyangll/git-blame.vim'
-
-" git blame in gutters
-Plug 'airblade/vim-gitgutter'
-
 " language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" see what you yanked
-Plug 'machakann/vim-highlightedyank'
+" debugger
+Plug 'puremourning/vimspector'
 
-" tags with language server
-Plug 'preservim/tagbar'
+"linting
+"===================================
+
+" IDE apperarence
+"===================================
 
 " light weight bar at bottom 
 Plug 'vim-airline/vim-airline'
@@ -40,19 +77,15 @@ Plug 'vim-airline/vim-airline'
 " graphic tree structure
 Plug 'preservim/nerdtree'
 
-" repeat commands in multiple lines
-Plug 'mg979/vim-visual-multi'
-
-" surround visual with any markers
-Plug 'tpope/vim-surround'
-
+" terminal in vim
 Plug 'tc50cal/vim-terminal'
 
-Plug 'tpope/vim-commentary'
+" visually different brace colors
+Plug 'p00f/nvim-ts-rainbow'
+
+" tags with language server
+Plug 'preservim/tagbar'
+"===================================
 
 Plug 'dusans/vim-hardmode'
-Plug 'puremourning/vimspector'
-
-Plug 'vim-autoformat/vim-autoformat'
-Plug 'tpope/vim-fugitive'
 call plug#end()

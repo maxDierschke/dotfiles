@@ -22,6 +22,7 @@ nnoremap <Leader>b :<C-u>call gitblame#echo()<CR>
 source ~/.config/nvim/.coc_configuration.vim
 source ~/.config/nvim/.vimspector.vim
 
+source ~/.config/nvim/.nerdtree.vim
 source ~/.config/nvim/.auto_formatting.vim
 "use space y to copy to sys clipboard.
 nnoremap <leader>y "+y
