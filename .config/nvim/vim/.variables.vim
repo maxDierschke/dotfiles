@@ -27,3 +27,8 @@ set colorcolumn=80
 inoremap <BS> <Nop>
 inoremap <Del> <Nop>
 let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.9/bin/python3'
+
+nnoremap <leader>j <c-w>j
+nnoremap <leader>k <c-w>k
+nnoremap <leader>h <c-w>h
+nnoremap <leader>l <c-w>l
