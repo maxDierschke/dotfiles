@@ -83,7 +83,12 @@ _G.packer_plugins = {
   gruvbox = {
     loaded = true,
     path = "/Users/maxdierschke/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
+    url = "https://github.com/gruvbox-community/gruvbox"
+  },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "/Users/maxdierschke/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,

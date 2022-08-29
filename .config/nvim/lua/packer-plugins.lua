@@ -8,7 +8,7 @@ end
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   -- theme
-  use 'morhetz/gruvbox'
+  use 'gruvbox-community/gruvbox'
   
   --Tools for better vim interacton
   --===================================
@@ -63,7 +63,13 @@ return require('packer').startup(function()
   
   -- IDE capabilities
   --===================================
-  
+  -- startup screen
+  -- use {
+  --  "goolord/alpha-nvim",
+  --  config = function()
+  --     require("alpha").setup()
+  --  end,
+  -- }
   -- auto formatting
   use 'vim-autoformat/vim-autoformat'
   
@@ -103,7 +109,8 @@ return require('packer').startup(function()
   -- tags with language server
   --use 'preservim/tagbar'
   --===================================
-  
+  -- performance  
+  use 'lewis6991/impatient.nvim'
 
   if packer_bootstrap then
     require('packer').sync()

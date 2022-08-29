@@ -10,6 +10,9 @@
             }
           }
       }
-    }
+    },
+  "post.enable":true,
+  "post.detect": true,
+  "post.agent": ""
 }
 

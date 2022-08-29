@@ -18,7 +18,7 @@ o.splitright = true
 o.splitbelow = true
 
 g.noerrorbells = true
-g.nowrap = true
+o.wrap = false
 
 o.ignorecase = true
 o.smartcase = true

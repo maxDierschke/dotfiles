@@ -1,5 +1,8 @@
 local k = vim.keymap
 
+-- package specific keybindings are in their specific setup file 
+--  in the path ../plugin/<package>.lua
+
 -- copy to/from sys clipboard
 k.set('n', '<leader>y', '"+y')
 k.set('n', '<leader>p', '"+p')
@@ -19,6 +22,18 @@ k.set('n', '<leader>j', '<c-w>j')
 k.set('n', '<leader>k', '<c-w>k')
 k.set('n', '<leader>h', '<c-w>h')
 k.set('n', '<leader>l', '<c-w>l')
+
+-- quicker navigation between tabs 
+k.set('n', '<leader>1', '1gt')
+k.set('n', '<leader>2', '2gt')
+k.set('n', '<leader>3', '3gt')
+k.set('n', '<leader>4', '4gt')
+k.set('n', '<leader>5', '5gt')
+k.set('n', '<leader>6', '6gt')
+k.set('n', '<leader>7', '7gt')
+k.set('n', '<leader>8', '8gt')
+k.set('n', '<leader>9', '9gt')
+k.set('n', '<leader>0', '<CMD>tablast<cr>')
 
 -- https://github.com/numToStr/dotfiles/blob/master/neovim/.config/nvim/lua/numToStr/keybinds.lua
 ----------------------------------------------------------
@@ -41,13 +56,4 @@ k.set('n', '<leader>[', '<CMD>bp<CR>')
 k.set('n', '<leader>]', '<CMD>bn<CR>')
 ----------------------------------------------------------
 
--- telescope shortcuts
-k.set('n', '<leader>ps', "<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep for > ')})<CR>")
-k.set('n', '<leader>ff', "<cmd>lua require('telescope.builtin').find_files()<cr>")
-k.set('n', '<leader>fg', "<cmd>lua require('telescope.builtin').live_grep()<cr>")
-k.set('n', '<leader>fb', "<cmd>lua require('telescope.builtin').buffers()<cr>")
-k.set('n', '<leader>fh', "<cmd>lua require('telescope.builtin').help_tags()<cr>")
-k.set('n', '<leader>gb', "<cmd>lua require('telescope.builtin').git_branches()<cr>")
-k.set('n', '<leader>gs', "<cmd>lua require('telescope.builtin').git_status()<cr>")
-k.set('n', '<leader>gc', "<cmd>lua require('telescope.builtin').git_commits()<cr>")
-k.set('n', '<leader>gf', "<cmd>lua require('telescope.builtin').git_files()<cr>")
+
