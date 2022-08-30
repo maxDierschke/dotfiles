@@ -80,10 +80,10 @@ return require('packer').startup(function()
     } 
   
   -- language server
-  use {'neoclide/coc.nvim', branch = 'release'}
-  
+   use {'neoclide/coc.nvim', branch = 'release'}
+  --use 'mfussenegger/nvim-jdtls'
   -- debugger
-  use 'puremourning/vimspector'
+  -- use 'puremourning/vimspector'
   
   --linting
   --===================================

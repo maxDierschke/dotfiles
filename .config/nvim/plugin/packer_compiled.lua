@@ -159,11 +159,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/maxdierschke/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
-  },
-  vimspector = {
-    loaded = true,
-    path = "/Users/maxdierschke/.local/share/nvim/site/pack/packer/start/vimspector",
-    url = "https://github.com/puremourning/vimspector"
   }
 }
 
