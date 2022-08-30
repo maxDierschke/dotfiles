@@ -5,6 +5,7 @@ else
 	ln -sf ~/.dotfiles/.aliases ~/.aliases  
 fi
 ln -sF ~/.dotfiles/.config/nvim ~/.config
+ln -sf ~/.dotfiles/request_templates/* ~/.coc-post
 if [ -f ~/.zshrc ] || [ -L ~/.zshrc ]; then
 	echo '~/.zshrc already exists and was not linked'
 else

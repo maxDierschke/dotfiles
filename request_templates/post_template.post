@@ -1,0 +1,4 @@
+URL: https://dummy.restapiexample.com/api/v1/create
+Method: POST
+Content-Type: application/json
+Body: {"name":"test","salary":"123","age":"25"}
