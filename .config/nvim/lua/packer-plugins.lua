@@ -83,7 +83,7 @@ return require('packer').startup(function()
    use {'neoclide/coc.nvim', branch = 'release'}
   --use 'mfussenegger/nvim-jdtls'
   -- debugger
-  -- use 'puremourning/vimspector'
+  use 'puremourning/vimspector'
   
   --linting
   --===================================
