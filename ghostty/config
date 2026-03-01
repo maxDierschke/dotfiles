@@ -1,0 +1,15 @@
+# See https://ghostty.org/docs/config/reference
+
+# Look
+theme = Gruvbox Dark
+background-opacity = .8
+font-family = "JetBrainsMonoNL Nerd Font"
+font-size = 16
+
+# Window
+mouse-hide-while-typing = true
+window-decoration = server
+
+# Other stuff
+link-url = true
+auto-update = check
