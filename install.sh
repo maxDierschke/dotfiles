@@ -14,3 +14,4 @@ while getopts "ciy" opt; do
 done
 
 ./ghostty/install.sh "$@"
+./tmux/install.sh "$@"
