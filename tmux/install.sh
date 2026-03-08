@@ -48,7 +48,10 @@ if [ ! is_tmux_installed ]; then
     printf 'Install tmux (y/n)? '
     read answer
   fi
-  install_tmux=$install_program || "$answer" != "${answer#[Yy]}"
+  case "$answer" in
+  [Yy]*) install_tmux=true ;;
+  *) install_tmux=$install_program ;;
+  esac
   if $install_tmux; then
     sudo apt install tmux
     echo 'tmux installed'
@@ -64,7 +67,10 @@ if [ is_tmux_installed ]; then
     read answer
   fi
 
-  link_tmux=$link_config || "$answer" != "${answer#[Yy]}"
+  case "$answer" in
+  [Yy]*) link_tmux=true ;;
+  *) link_tmux=$link_config ;;
+  esac
   if $link_tmux; then
     if [ -e $HOME/.tmux.conf ]; then
       now=$(date "+%F-%T")
