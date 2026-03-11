@@ -12,6 +12,11 @@ while getopts "ciy" opt; do
     ;;
   esac
 done
+install_powerline_fonts() {
+  sudo apt-get install fonts-powerline
+}
 
+install_powerline_fonts
 ./ghostty/install.sh "$@"
 ./tmux/install.sh "$@"
+./zsh/install.sh "$@"

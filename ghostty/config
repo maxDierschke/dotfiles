@@ -1,5 +1,7 @@
 # See https://ghostty.org/docs/config/reference
 
+# reload config with CTRL+SHIFT+,
+
 # Look
 theme = Gruvbox Dark
 background-opacity = .72

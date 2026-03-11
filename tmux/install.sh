@@ -74,7 +74,7 @@ if [ is_tmux_installed ]; then
   if $link_tmux; then
     if [ -e $HOME/.tmux.conf ]; then
       now=$(date "+%F-%T")
-      mv $HOME/.tmux.conf $HOME/.tmux.conf$now
+      mv $HOME/.tmux.conf $HOME/.tmux.conf_$now
     fi
     ln -sf $(pwd)/$(dirname $0)/config $HOME/.tmux.conf
     install_tpm_if_not_exists
